@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.anelemhlanga.yogafitness">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.SettingsView"></activity>
+        <activity android:name=".Views.CalendarView"></activity>
+        <activity android:name=".Views.Daily_Training" />
+        <activity android:name=".Views.SettingsView" />
         <activity android:name=".Views.ViewExercise" />
         <activity android:name=".Views.ListExercises" />
         <activity android:name=".Views.StartView" />
@@ -20,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8c73561433d655d36010868d183de0eadf7b0f30" />
     </application>
 
 </manifest>
