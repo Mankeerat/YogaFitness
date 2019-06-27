@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".Views.CalendarView"></activity>
         <activity android:name=".Views.Daily_Training" />
         <activity android:name=".Views.SettingsView" />
