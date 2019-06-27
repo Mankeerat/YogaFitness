@@ -16,4 +16,3 @@ Yoga Fitness is an app to measure , record and track your fitness
 
 ## Tools and Technologies
 * Java 
-
