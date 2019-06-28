@@ -2,6 +2,8 @@
 
 Yoga Fitness is an app to measure , record and track your fitness
 
+[![CircleCI](https://circleci.com/gh/anelemhlanga/YogaFitness/tree/master.svg?style=shield)](https://circleci.com/gh/anelemhlanga/YogaFitness/tree/master)
+
 ## Icon
 <img src="art/icon.png" width="15%" />
 
