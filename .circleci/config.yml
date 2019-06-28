@@ -52,4 +52,4 @@ jobs:
           path: app/build/test-results
 
       # run tests!
-      - run: gradle test
+      - run: ./gradlew test
