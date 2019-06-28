@@ -35,7 +35,7 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle }}
       - run:
           name: Download Dependencies
-          command: ./gradlew androidDependencie
+          command: ./gradlew androidDependencies
       - run:
           name: Build assembleRelease
           command: ./gradlew assembleRelease
