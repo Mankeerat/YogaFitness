@@ -26,13 +26,13 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle }}
+            key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-      - save_cache:
-          paths:
+      - save_cache:          
+            paths:
             - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle }}
+          key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
