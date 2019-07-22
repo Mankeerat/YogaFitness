@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:padding="16dp"
     tools:context=".Views.StartView">
 
     <ImageView
@@ -33,7 +33,7 @@
                 android:id="@+id/btnExercises"
                 android:layout_marginBottom="10dp"
                 android:background="@color/colorPrimary"
-                android:text="Exercises"
+                android:text="@string/exercises"
                 android:textColor="@color/colorAccent"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -41,8 +41,6 @@
 
 
         </LinearLayout>
-
-
 
     </LinearLayout>
 
