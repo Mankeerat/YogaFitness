@@ -6,15 +6,28 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.anelemhlanga.yogafitness.R;
 
 public class StartView extends AppCompatActivity {
 
+    Button btnExercises;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_view);
+
+        btnExercises = findViewById(R.id.btnExercises);
+        btnExercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startExtercise = new Intent(getApplicationContext(), ListExercises.class);
+                startActivity(startExtercise);
+            }
+        });
     }
 
     @Override
