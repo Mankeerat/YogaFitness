@@ -44,9 +44,14 @@ public class StartView extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_calendar) {
+            Intent startExtercise = new Intent(getApplicationContext(), CalendarView.class);
+            startActivity(startExtercise);
+
 
             return true;
-        } else if (id == R.id.action_settings){
+        } else if (id == R.id.action_alarm){
+            Intent startExtercise = new Intent(getApplicationContext(), AlarmView.class);
+            startActivity(startExtercise);
             return true;
         }
 

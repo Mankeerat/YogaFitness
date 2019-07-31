@@ -9,4 +9,6 @@
     <string name="start_exercise">Start Exercise</string>
     <string name="_20">20</string>
     <string name="todo">TODO</string>
+    <string name="title_activity_alarm_view">Daily Alarm</string>
+    <string name="title_activity_calendar_view">Calendar</string>
 </resources>

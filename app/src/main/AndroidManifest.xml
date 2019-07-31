@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Views.CalendarView"
+            android:label="@string/title_activity_calendar_view"
+            android:parentActivityName=".Views.StartView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anelemhlanga.yogafitness.Views.StartView" />
+        </activity>
+        <activity
+            android:name=".Views.AlarmView"
+            android:label="@string/title_activity_alarm_view"
+            android:parentActivityName=".Views.StartView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anelemhlanga.yogafitness.Views.StartView" />
+        </activity>
+        <activity
             android:name=".Views.ViewExerciseView"
             android:label="@string/title_activity_view_exercise_view"
             android:parentActivityName=".Views.ListExercises"
@@ -29,9 +47,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.anelemhlanga.yogafitness.Views.StartView" />
         </activity>
-        <activity android:name=".Views.CalendarView" />
         <activity android:name=".Views.Daily_Training" />
-        <activity android:name=".Views.SettingsView" />
         <activity android:name=".Views.StartView" />
         <activity
             android:name=".Views.LaunchingView"

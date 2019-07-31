@@ -9,12 +9,12 @@ import android.view.View;
 
 import com.anelemhlanga.yogafitness.R;
 
-public class CalendarView extends AppCompatActivity {
+public class AlarmView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar_view);
+        setContentView(R.layout.activity_alarm_view);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

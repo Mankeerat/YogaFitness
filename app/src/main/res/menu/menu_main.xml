@@ -13,9 +13,9 @@
 
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_alarm"
         android:orderInCategory="100"
-        android:title="Settings"
+        android:title="Alarm"
         app:showAsAction="never"/>
 
 </menu>
