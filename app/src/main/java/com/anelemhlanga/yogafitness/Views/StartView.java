@@ -8,12 +8,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.anelemhlanga.yogafitness.R;
 
 public class StartView extends AppCompatActivity {
 
-    Button btnExercises;
+    private Button btnExercises;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,15 @@ public class StartView extends AppCompatActivity {
 
         btnExercises = findViewById(R.id.btnExercises);
         btnExercises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startExtercise = new Intent(getApplicationContext(), ListExercises.class);
+                startActivity(startExtercise);
+            }
+        });
+
+        imageView = findViewById(R.id.btnTraining);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent startExtercise = new Intent(getApplicationContext(), ListExercises.class);
@@ -43,13 +54,7 @@ public class StartView extends AppCompatActivity {
     public  boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        if (id == R.id.action_calendar) {
-            Intent startExtercise = new Intent(getApplicationContext(), CalendarView.class);
-            startActivity(startExtercise);
-
-
-            return true;
-        } else if (id == R.id.action_alarm){
+        if (id == R.id.action_alarm){
             Intent startExtercise = new Intent(getApplicationContext(), AlarmView.class);
             startActivity(startExtercise);
             return true;

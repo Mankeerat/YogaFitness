@@ -6,13 +6,6 @@
 
 
     <item
-        android:id="@+id/action_calendar"
-        android:orderInCategory="100"
-        android:title="Calendar"
-        app:showAsAction="never"/>
-
-
-    <item
         android:id="@+id/action_alarm"
         android:orderInCategory="100"
         android:title="Alarm"
