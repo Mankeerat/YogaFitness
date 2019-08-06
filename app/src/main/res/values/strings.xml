@@ -11,4 +11,7 @@
     <string name="todo">TODO</string>
     <string name="title_activity_alarm_view">Daily Alarm</string>
     <string name="title_activity_calendar_view">Calendar</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="save">Save</string>
 </resources>

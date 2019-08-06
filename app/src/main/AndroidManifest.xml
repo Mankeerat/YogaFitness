@@ -59,6 +59,8 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".Notification.AlarmNotificationReceiver"/>
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="8c73561433d655d36010868d183de0eadf7b0f30" />
