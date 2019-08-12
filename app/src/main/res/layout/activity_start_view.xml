@@ -8,13 +8,13 @@
     android:padding="16dp"
     tools:context=".Views.StartView">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnTraining"
-        android:layout_centerInParent="true"
-        android:src="@drawable/play_button"/>
-    
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/btnTraining"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/play_button"/>-->
+    <!---->
 
             <Button
                 android:id="@+id/btnExercises"
