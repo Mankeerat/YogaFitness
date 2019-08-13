@@ -16,35 +16,23 @@
             android:screenOrientation="portrait"
             android:name=".Views.AlarmView"
             android:label="@string/title_activity_alarm_view"
-            android:parentActivityName=".Views.StartView"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.anelemhlanga.yogafitness.Views.StartView" />
+            android:parentActivityName=".Views.ListExercises"
+            >
         </activity>
         <activity
             android:screenOrientation="portrait"
             android:name=".Views.ViewExerciseView"
             android:label="@string/title_activity_view_exercise_view"
             android:parentActivityName=".Views.ListExercises"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.anelemhlanga.yogafitness.Views.ListExercises" />
+           >
         </activity>
         <activity
             android:name=".Views.ListExercises"
             android:label="@string/title_activity_list_exercises"
-            android:parentActivityName=".Views.StartView"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.anelemhlanga.yogafitness.Views.StartView" />
+            android:launchMode="singleTop"
+           >
+
         </activity>
-        <activity
-            android:screenOrientation="portrait"
-            android:name=".Views.StartView" />
         <activity
             android:screenOrientation="portrait"
             android:name=".Views.LaunchingView"
@@ -58,9 +46,6 @@
 
         <receiver android:name=".Notification.AlarmNotificationReceiver"/>
 
-        <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="8c73561433d655d36010868d183de0eadf7b0f30" />
     </application>
 
 </manifest>

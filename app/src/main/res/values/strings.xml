@@ -2,7 +2,7 @@
     <string name="app_name">Yoga Fitness</string>
     <string name="blank" />
     <string name="exercises">Exercises</string>
-    <string name="title_activity_list_exercises">List Exercises</string>
+    <string name="title_activity_list_exercises">Yoga Fitness</string>
     <string name="view_exercises">View Exercises</string>
     <string name="title_activity_view_exercise_view">Name of Exercise</string>
     <string name="name_of_exercise">Name of Exercise</string>

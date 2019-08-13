@@ -1,13 +1,14 @@
 package com.anelemhlanga.yogafitness.Views;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+
 
 import com.anelemhlanga.yogafitness.Adapter.RecyclerViewAdapter;
 import com.anelemhlanga.yogafitness.Model.Exercise;
@@ -28,9 +29,6 @@ public class ListExercises extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_exercises);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         startExercise();
 
@@ -56,6 +54,29 @@ public class ListExercises extends AppCompatActivity {
         exerciseList.add(new Exercise(R.drawable.upward_facing_dog, "Upward Facing Dog"));
         exerciseList.add(new Exercise(R.drawable.warrior_2, "Warrior II"));
         exerciseList.add(new Exercise(R.drawable.warrior_3, "Warrior III"));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+
+        return true;
+    }
+
+    @Override
+    public  boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+
+        if (id == R.id.action_alarm){
+            Intent startExtercise = new Intent(getApplicationContext(), AlarmView.class);
+            startActivity(startExtercise);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+
     }
 
 }
